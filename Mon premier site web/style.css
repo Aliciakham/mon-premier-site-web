@@ -1,0 +1,35 @@
+ p {/* S'applique à tous les paragraphes (balise p) */
+     font-family: Arial;
+ }
+
+ h1,
+ h2 { /* S'appliquera à la fois aux h1 et h2 */
+     color: fuchsia;
+ }
+
+ #premier-paragraphe {/* Un séléctionneur commançant pas "#" vise un identifiant (unique) */
+    font-size: larger;
+ }
+
+ .surlignage {
+    background-color:darkorchid;
+
+    border: 1px solid orange;
+ }
+
+ .couleur-de-texte-bleu {
+    color:blue
+ }
+
+ p .couleur-de-texte-bleu {/* On vise toute balise portant la classe " couleur-de-texte-bleu" et se trouvant DANS un paragraphe (l'espace sert strictement a ça dans un selecteur)*/
+    text-decoration: line-through;
+ } 
+ /* Ce qui est différent de : */
+ p.couleur-de-texte-bleu{
+    /* On vise tout paragraphe portant la classe "couleur-de-texte-bleu"*/
+ }
+ /* On peut aussi viser des éléments à condition qu'il soit dans un certain "état" ( par exemple survolés par la souris)*/
+
+ .surlignage:hover{
+    background-color:darkslategray;
+ }
